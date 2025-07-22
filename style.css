@@ -16,7 +16,7 @@ body {
 /* Layout Containers */
 
 header.container{
-  dipslay: flex;
+  display: flex;
   align-items: center;
   justify-content: space;
 }
@@ -29,42 +29,49 @@ header.container{
 
 /* Header */
 
-.header {
-    background-color: #fff;
-    padding: 1rem 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+header {
+    position: sticky;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(248, 248, 248, 0.603);
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
   height: 40px;
   width: auto;
-  display: block;
 }
 
-.nav {
-    float: right;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-.nav a{
-    margin-left: 1.5rem;
+nav a {
+    color: rgb(32, 2, 2);
     text-decoration: none;
-    color: #1e293b;
     font-weight: 500;
-    border: #361eaf;
-    border-style: double;
 }
-
-.nav a:hover{
-    color: #1e40af;
-}
-
 /* Hero Section */
 
 .hero {
-    background: linear-gradient(to right, #361eaf, #7557f0);
+    background: linear-gradient(270deg, #2605e5, #7557f0, #5f60f3, #4036f0);
+    background-size: 800% 800%;
+    animation: gradientShift 15s ease infinite;
     color: #fff;
     padding: 5rem 0;
     text-align: center;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero h2 {
@@ -92,8 +99,14 @@ header.container{
 section h3{
     font-size: 2rem;
     color: #1e293b;
-    margin-bottom: 1.5rem;
     text-align: center;
+}
+
+section p {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 50px;
+  text-align: center
 }
 
 .services .grid{
@@ -107,12 +120,24 @@ section h3{
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
 .card h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #1e40af;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .about, .contact {
@@ -186,15 +211,6 @@ section h3{
   text-align: center;
   padding: 3rem 1rem;
 }
-.cta .btn {
-  margin-top: 1rem;
-  background: #fff;
-  color: #1e40af;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-}
 
 .about-content, .contact-form-section {
   padding: 3rem 0;
@@ -202,6 +218,74 @@ section h3{
 .about-content p {
   margin-bottom: 1.5rem;
   font-size: 1rem;
+}
+
+.footer {
+  background: #111;
+  color: #eee;
+  padding: 60px 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: red;
+}
+
+.footer-social {
+  flex: 1 1 200px;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.footer-social img:hover {
+  filter: brightness(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
 }
 
 .contact-form {
