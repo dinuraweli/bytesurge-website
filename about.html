@@ -6,6 +6,8 @@
   <title>About Us | ByteSurge</title>
   <link rel="stylesheet" href="about.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -33,15 +35,23 @@
 
   <section class="about-content">
     <div class="container">
+      <div class = statement>
       <p><strong>BytSurge</strong> is a digital solutions provider founded by two tech enthusiasts who believe in building better systems from scratch. We’re based in the Netherlands and operate globally, including in Sri Lanka.</p>
 
       <p>We specialize in web and mobile app development, as well as creating custom CRM and ERP platforms tailored to each client's unique needs. Our team focuses on performance, scalability, and intuitive user experiences.</p>
+      </div>
 
-      <h3>Our Mission</h3>
+    <div class = "vision-mission-grid">
+      <div class = "vision-mission">
+      <h3> Our<br> <strong> Mission </strong></h3>
       <p>To empower businesses through intelligent, custom-built digital platforms that streamline operations and drive growth.</p>
+      </div>
 
-      <h3>Our Vision</h3>
+      <div class = "vision-mission">
+      <h3> Our<br> <strong>Vision</strong></h3>
       <p>To become a global leader in building modern enterprise tools that solve real-world business challenges.</p>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -72,5 +82,15 @@
             <p> &copy; 2025 ByteSurge. All rights reserved. </p>
         </div>
   </footer>
+
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: false      // animation happens only once
+  });
+</script>
+
 </body>
 </html>
