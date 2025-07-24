@@ -4,54 +4,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Services | ByteSurge</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="services.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href = "https://unpkg.com/aos@2.3.4/dist/aos.css" rel = "stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
+
 <body>
   
 <header>
-        <div class = "logo"> 
-          <a href = "index.html">
-          <img src = "images/logo.jpg" alt = "ByteSurge Logo" class = "logo">
-      </a>
-     </div>
-        <nav>
+    <div class = "logo"> <a href = "index.html">
+          <img src = "images/logo 4.png" alt = "ByteSurge Logo" class = "logo">
+      </a> 
+    </div>
+        <div class = "menu-toggle" id = "menu-toggle"> &#9776; </div>
+        <nav id = "navMenu">
             <ul>
-                <li><a href = "services.html">Services </a></li>
-                <li><a href = "about.html">About </a></li>
-                <li><a href = "contact.html">Contacts </a></li>
+                <li><a href = "index.html"> Home </a></li>
+                <li><a href = "services.html"> Our Services </a></li>
+                <li><a href = "about.html"> About Us </a></li>
+                <li><a href = "contact.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
             </ul>
         </nav>
-    </header>
+</header>
 
+  <section class = "hero-banner">
+        <div class = "hero-content" data-aos = "fade-up">
+            <h1> Our Services </h1>
+            <p> Custom-built digital solutions tailored to your business. </p>
+            <div class = "cta-buttons">
+                <a href = "#services" class = "btn primary2"> Learn More </a>
+            </div>
+        </div>
+    </section>
 
-  <section class="hero small">
-    <div class="container">
-      <h2>Our Services</h2>
-      <p>Custom-built digital solutions tailored to your business.</p>
-    </div>
-  </section>
+  <section class="services" id = "services">
+    <div class="services-container">
+      <div class="card" data-aos = "zoom-in">
+        <h2> 🌐 Web Development</h2>
+        <h3> Custom, Scalable, and Performance-Driven Websites </h3>
+        <p>Responsive websites tailored to showcase your brand and grow with your business. 
+          From dynamic landing pages to full-scale web applications, BytSurge blends 
+          craftsmanship with modern design to deliver fast, SEO-friendly experiences 
+          that convert users into customers.
+        </p>
 
-  <section class="services-detail">
-    <div class="container">
-      <div class="service-block">
-        <h3>Web Development</h3>
-        <p>We craft fast, responsive, and visually engaging websites tailored to your brand. From corporate sites to dynamic portals, our team ensures everything is custom-coded for scalability and performance.</p>
+        <div  class = "middle-text">
+        <p> Including </p>
+        </div>
+
+        <ul class = features>
+          <li> Responsive UI/UX that works across all devices </li>
+          <li> SEO optimization and cross-browser compatibility </li>
+          <li> CMS integration or headless architecture </li>
+          <li> Fast-loading pages with clean, maintainable code </li>
+        </ul>  
       </div>
 
-      <div class="service-block">
-        <h3>Mobile App Development</h3>
-        <p>We build robust, cross-platform mobile apps using Flutter, React Native, or native codebases. Whether it's for customer engagement or internal operations, we develop apps that deliver results.</p>
+      <div class="card" data-aos = "fade-left">
+        <h2> 📱 Mobile App Development </h2>
+        <h3> Cross-Platform Apps Built for Engagement </h3>
+        <p>Reach your users wherever they are—with performant apps designed for both Android and 
+          iOS. We use cutting-edge frameworks like Flutter and React Native to deliver feature-rich
+           mobile experiences that load fast and feel native.
+          </p>
+
+        <div  class = "middle-text">
+        <p> Including </p>
+        </div>  
+
+        <ul class = features>
+          <li> Human-centered design and interactive user flows </li>
+          <li> Push notifications, offline support, and native API integration </li>
+          <li> App Store and Google Play deployment assistance </li>
+          <li> Ongoing maintenance and updates </li>
+        </ul>     
       </div>
 
-      <div class="service-block">
-        <h3>Custom CRM Solutions</h3>
-        <p>Our CRM platforms are developed from scratch to suit your unique workflow—lead management, client onboarding, communication, and reporting all in one place, fully adaptable and scalable.</p>
+      <div class="card" data-aos = "fade-right">
+        <h2> 🧰 CRM Platform Development </h2>
+        <h3> CRM Built Around Your Business, Not the Other Way Around </h3>
+        <p>Ditch the off-the-shelf constraints. We craft custom CRM platforms that adapt to how your 
+          business operates—handling lead capture, customer interactions, sales pipelines,
+          and analytics—all in one centralized system.
+        </p>
+        
+        <div  class = "middle-text">
+        <p> Including </p>
+        </div>
+
+        <ul class = features>
+          <li> Custom dashboards and workflow automation </li>
+          <li> Robust reporting and analytics for smarter decision-making </li>
+          <li> Modular architecture for added features over time </li>
+          <li> Secure data storage and role-based access </li>
+        </ul>     
       </div>
 
-      <div class="service-block">
-        <h3>ERP System Development</h3>
-        <p>We develop modular ERP systems that cover finance, HR, inventory, procurement, and operations. Built for performance, our ERP platforms evolve with your business needs—no license fees or third-party limitations.</p>
+      <div class="card" data-aos = "fade-left">
+        <h2> ⚙️ ERP System Development </h2>
+        <h3> Enterprise Resource Planning </h3>
+        <p>Get full control and insight over your organization’s processes with bespoke ERP systems. 
+          From operations and inventory to HR and finance, our solutions deliver transparency, efficiency, 
+          and seamless scalability.
+        </p>
+
+        <div  class = "middle-text">
+        <p> Including </p>
+        </div>
+        
+        <ul class = features>
+          <li> Custom modules: inventory, purchasing, accounting, HR </li>
+          <li> Reporting and business intelligence tools </li>
+          <li> Integration with e-commerce, CRM, or third-party APIs </li>
+          <li> Role-based access and centralized data management </li>
+        </ul>     
+      </div>
+
+      <div class="card" data-aos = "fade-right">
+        <h2> 🛍️ E-Commerce Product Development </h2>
+        <h3> Launch and Grow Your Online Store </h3>
+        <p>From product catalog to checkout, we build e-commerce platforms optimized for conversion and scale. 
+          Whether you're starting from scratch or migrating an existing store, our focus is on security, usability, 
+          and performance.
+        </p>
+
+        <div  class = "middle-text">
+        <p> Including </p>
+        </div>
+        
+        <ul class = features>
+          <li> Responsive storefronts with intuitive product browsing </li>
+          <li> Smooth checkout flows optimized for conversions </li>
+          <li> Inventory management, order processing, and admin dashboards </li>
+          <li> Integration with payment gateways (Stripe, PayPal), shipping APIs, and more </li>
+        </ul>     
       </div>
     </div>
   </section>
@@ -60,14 +147,67 @@
     <div class="container">
       <h3>Need a tailored solution?</h3>
       <p>Let’s build a custom system that gives your business a competitive edge.</p>
-      <a href="contact.html" class="btn">Contact Us</a>
+      <a href="contact.html">Contact Us</a>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 BytSurge. All rights reserved.</p>
-    </div>
+  <footer class = "footer">
+
+        <div class = "footer-container">
+            <div class = "footer-logo">
+                <h3> BYTESURGE </h3>
+                <p> Think Possible </p>
+            </div>
+            
+            <div class = "footer-contact">
+              <h3> Contact Us </h3>
+              <p> Let's build something powerful together</p>
+              <p> Email: <a href="mailto:hello@bytesurge.com">hello@bytesurge.com</a></p>
+              <p> Locations: Netherlands & Sri Lanka</p>
+            </div>
+
+            <div class = "footer-social">
+                <a href = "#"><img src = "images/facebook.png" alt ="Facebook"></a>
+                <a href = "#"><img src = "images/x.png" alt ="Twitter"></a>
+                <a href = "#"><img src = "images/instagram.png" alt ="Instagram"></a>
+                <a href = "#"><img src = "images/youtube.png" alt ="TouTube"></a>
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p> &copy; 2025 ByteSurge. All rights reserved. </p>
+        </div>
   </footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: false      // animation happens only once
+  });
+</script>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navMenu');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
+
+
 </body>
 </html>

@@ -11,32 +11,33 @@
 </head>
 <body>
 
-    <header>
-        <div class = "header-logo"> 
-            <a href = "index.html">
+<header>
+    <div class = "logo"> <a href = "index.html">
           <img src = "images/logo 4.png" alt = "ByteSurge Logo" class = "logo">
-      </a>
- </div>
-        <nav>
+      </a> 
+    </div>
+        <div class = "menu-toggle" id = "menu-toggle"> &#9776; </div>
+        <nav id = "navMenu">
             <ul>
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "services.html"> Services </a></li>
-                <li><a href = "about.html"> About </a></li>
-                <li><a href = "contact.html" class = "btn-outline"> Contact Us </a></li>
+                <li><a href = "services.html"> Our Services </a></li>
+                <li><a href = "about.html"> About Us </a></li>
+                <li><a href = "contact.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
             </ul>
         </nav>
-    </header>
+</header>
     
   <section class = "hero">
         <div class = "hero-content">
             <h1> About <br><span> ByteSurge </span></h1>
+            <p> We provide you with services that <br> match  your tech solutions </p>
         </div>
     </section>
 
   <section class="about-content">
     <div class="container">
       <div class = statement>
-      <p><strong>BytSurge</strong> is a digital solutions provider founded by two tech enthusiasts who believe in building better systems from scratch. We’re based in the Netherlands and operate globally, including in Sri Lanka.</p>
+      <p><strong>ByteSurge</strong> is a digital solutions provider founded by two tech enthusiasts who believe in building better systems from scratch. We’re based in the Netherlands and operate globally, including in Sri Lanka.</p>
 
       <p>We specialize in web and mobile app development, as well as creating custom CRM and ERP platforms tailored to each client's unique needs. Our team focuses on performance, scalability, and intuitive user experiences.</p>
       </div>
@@ -89,6 +90,15 @@
   AOS.init({
     duration: 1000, // animation duration in ms
     once: false      // animation happens only once
+  });
+</script>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navMenu');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
   });
 </script>
 
