@@ -1,0 +1,228 @@
+/* Base Reset & Fonts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+/* hHeader */
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    z-index: 10;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 80vh;
+    background: url('images/logo.jpg') no-repeat right center/contain;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 60px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.804), rgba(0, 0, 0, 0.208))
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero h1{
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.hero h1 span{
+    color: red;
+}
+
+.heading h1 {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.footer {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    float: none;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .services .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.about-container p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.24rem;
+  color: #080808;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f8f55700;
+}
+
+.footer {
+  background: #111;
+  color: #eee;
+  padding: 60px 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.footer-logo {
+  flex: 1 1 250px;
+  border-color: #19d53500;
+  border-style: dotted;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-color: #f63ba200;
+  border-style: dotted;
+}
+
+.footer-contact{
+  flex: 1 1 250px;
+  border-color: #3b83f600;
+  border-style: dotted;
+}
+
+.footer-contact h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-contact a{
+  color: #1797f2
+}
+
+.footer-links {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: red;
+}
+
+.footer-social {
+  flex: 1 1 200px;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  border-color: #eef60000;
+  border-style: dotted;
+  justify-content: center;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.footer-social img:hover {
+  filter: brightness(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
