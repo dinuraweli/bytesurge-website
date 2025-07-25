@@ -164,13 +164,14 @@ nav a {
   text-align: center;
   position: relative;
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 .hero-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432))
 }
 
 .hero-content {
@@ -198,7 +199,8 @@ nav a {
   background: #fff;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.435);
+  margin-bottom: 20px;
 }
 .contact-form label {
   display: block;
@@ -224,7 +226,7 @@ nav a {
   cursor: pointer;
 }
 .contact-form .btn:hover {
-  background-color: #3b83f600;
+  background-color: #f6ab3b;
 }
 
 .footer {

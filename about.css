@@ -136,10 +136,11 @@ nav a {
 
 .hero {
     height: 80vh;
-    background: url('images/logo.jpg') no-repeat right center/contain;
+    background: url('images/logo\ 4.png') no-repeat center center/contain;
+    background-color: #1797f2;
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: last baseline;
+    justify-content: center;
     padding: 0 60px;
     position: relative;
 }
@@ -148,7 +149,7 @@ nav a {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.456))
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0))
 }
 
 .hero-content {
@@ -161,6 +162,7 @@ nav a {
     font-size: 64px;
     line-height: 1.2;
     color: #fefefe;
+    text-align: center;
 }
 
 .hero h1 span{
@@ -169,6 +171,7 @@ nav a {
     text-decoration-color: rgb(60, 50, 126);
     text-decoration-thickness: 5px;
     text-decoration-line: underline;
+    
 }
 
 .heading h1 {
@@ -187,6 +190,49 @@ nav a {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
+
+/* hero 2 */
+
+  .hero-banner {
+  /*background: url('images/logo.jpg') no-repeat center center/cover;*/
+  background-color: #1797f2;
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0))
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fafcfc;
+}
+
 
 @media (max-width: 768px) {
   .nav {
