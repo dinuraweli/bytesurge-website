@@ -98,6 +98,11 @@ nav a {
   text-align: center;
   position: relative;
   padding: 0 20px;
+  /*background: linear-gradient(135deg, #4b0082, #5c5cff);
+  background-image: url('assets/abstract-tech-bg.svg'); /* or PNG
+  background-size: cover;
+  background-position: center;*/
+
 }
 
 .hero-banner::after {
@@ -107,10 +112,23 @@ nav a {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432))
 }
 
+/*.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Optional overlay
+  z-index: 0;
+}*/
+
 .hero-content {
   position: relative;
   z-index: 1;
 }
+
+/*.hero-content {
+  z-index: 1;
+  max-width: 700px;
+}*/
 
 .hero-content h1 {
   font-size: 3rem;
@@ -345,7 +363,7 @@ section p {
 
 .features {
     padding: 10px 20px;
-    background: #296ccb00
+    background: #176be000;;
 }
 
 .feature-row {
@@ -353,7 +371,7 @@ section p {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    margin: 3rem 0;
+    margin: 3rem 3rem;
     flex-wrap: wrap;
     background-color: #0eefe400;
 }
@@ -376,7 +394,7 @@ section p {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.4s ease;
-    background-color: #0eefe4;
+    background-color: #0eefe400;
 }
 
 .feature-image img:hover {
@@ -577,9 +595,4 @@ section p {
     justify-content: center;
   }
 }
-
-
-
-
-
 

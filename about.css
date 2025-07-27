@@ -290,10 +290,10 @@ nav a {
 }
 
 .vision-mission {
-  background: rgb(236, 231, 231);
+  background: rgb(255, 255, 255);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(40, 33, 33, 0.871);
+  box-shadow: 0 5px 15px #1797f2;
   transition: transform 0.3s ease;
 }
 
